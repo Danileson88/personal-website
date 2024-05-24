@@ -4,9 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {},
-  },
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Roboto', 'sans-serif'],
+          bebas: ['Bebas Neue']
+        },
+      },
+    },
   plugins: [],
 }
 

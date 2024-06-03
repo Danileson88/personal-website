@@ -1,12 +1,6 @@
-import React, { useState } from "react";
 import "../styles/animations.css";
-
-const Header: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const openMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+import { HeaderProps } from "../types";
+const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
   return (
     <nav
       className=" flex mt-8 md:ml-10 md:mr-10 md:justify-between md:sticky md:top-0
@@ -37,7 +31,7 @@ const Header: React.FC = () => {
         md:w-auto w-screen md:h-auto bg-gray-300 md:bg-inherit
         h-screen flex items-center flex-col md:flex-row md:gap-2 gap-10
         text-3xl md:text-base
-        ${isOpen ? "block fade-in-down" : "hidden"} md:block`}
+        ${isOpen ? "block fade-in-up" : "hidden"} md:block`}
       >
         <li className="mr-4 md:mt-0 mt-20">
           Login

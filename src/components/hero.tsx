@@ -7,14 +7,14 @@ const Hero: React.FC<HeroProps> = ({ isOpen }) => {
     <div
       className={` ${
         isOpen ? "opacity-0" : " opacity-100"
-      } flex md:flex justify-center md:h-screen md:mt-[100px] absolute md:relative
+      } fade-in-up flex md:flex justify-center md:h-screen md:mt-[100px] absolute md:static
       mt-24`}
     >
       <div className=" flex items-center justify-center gap-5">
         <img
           src="./src/assets/profile-pic.JPG"
           className=" w-[375px] md:w-[500px] h-[375px] md:h-[500px] border-solid rounded-full object-cover mt-32
-          absolute md:relative top-[400px] md:top-0"
+          absolute md:static top-[400px] md:top-0"
         />
         <div className="info-text w-fit mr-5 ml-5 md:mr-0 md:ml-5 md:w-[500px]">
           <h1 className=" text-8xl font-bold">Hello</h1>

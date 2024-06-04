@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/NavBar";
 import Hero from "./components/hero";
+import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div>
       <Header openMenu={openMenu} isOpen={isOpen} />
       <Hero openMenu={openMenu} isOpen={isOpen} />
+      <Footer />
     </div>
   );
 }

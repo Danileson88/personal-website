@@ -3,7 +3,7 @@ import { HeaderProps } from "../types";
 const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
   return (
     <nav
-      className=" flex mt-8 md:ml-10 md:mr-10 md:justify-between md:sticky md:top-0
+      className=" pt-8 flex md:ml-10 md:mr-10 md:justify-between bg-gray-100 top-0 z-10
     "
     >
       <div className="flex items-center ml-5">

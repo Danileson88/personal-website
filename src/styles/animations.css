@@ -5,12 +5,12 @@
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0px);
   }
 }
 
 .fade-in-up {
-  animation: fadeInUp 0.5s ease-out;
+  animation: fadeInUp 0.8s linear;
 }
 
 @keyframes fadeInUp1 {
@@ -25,7 +25,7 @@
 }
 
 .fade-in-up1 {
-  animation: fadeInUp1 0.5s ease-out; /* Increased duration to 1 second */
+  animation: fadeInUp1 1s ease-out; /* Increased duration to 1 second */
 }
 
 @keyframes fadeInUp2 {
@@ -40,7 +40,7 @@
 }
 
 .fade-in-up2 {
-  animation: fadeInUp2 0.7s ease-out; /* Increased duration to 1 second */
+  animation: fadeInUp2 1.2s ease-out; /* Increased duration to 1 second */
 }
 
 @keyframes fadeInUp3 {
@@ -55,5 +55,5 @@
 }
 
 .fade-in-up3 {
-  animation: fadeInUp3 0.9s ease-out; /* Increased duration to 1 second */
+  animation: fadeInUp3 1.4s ease-out; /* Increased duration to 1 second */
 }

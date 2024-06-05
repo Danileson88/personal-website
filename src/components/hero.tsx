@@ -12,7 +12,7 @@ const Hero: React.FC<HeroProps> = ({ isOpen }) => {
     >
       <div className=" flex items-center justify-center gap-5">
         <img
-          src="/assets/profile-pic.JPG"
+          src="assets/profile-pic.JPG"
           className=" w-[375px] md:w-[500px] h-[375px] md:h-[500px] border-solid rounded-full object-cover mt-32
           absolute md:static top-[400px] md:top-0"
         />

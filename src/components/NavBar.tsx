@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
         <span className="bg-gray-600 rounded-full md:w-10 w-14 md:h-10 h-14 mr-3"></span>
         <div className="flex items-baseline">
           <h1 className="font-bebas font-extrabold md:text-4xl text-3xl mr-3">
-            Daniel Ortega
+            Daniel Ortega.
           </h1>
           <h4 className="font-small flex-none">Developer</h4>
         </div>

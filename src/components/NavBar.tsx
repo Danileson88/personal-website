@@ -2,8 +2,6 @@ import "../styles/animations.css";
 import { HeaderProps } from "../types";
 
 const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
-  const basePath = import.meta.env.BASE_URL;
-
   return (
     <nav className="pt-8 flex md:ml-10 md:mr-10 md:justify-between bg-gray-100 top-0 z-10">
       <div className="flex items-center ml-5">
@@ -16,9 +14,7 @@ const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
         </div>
       </div>
       <img
-        src={`${basePath}src/assets/${
-          isOpen ? "x-icon4.png" : "hamburger-icon.png"
-        }`}
+        src={`src/assets/${isOpen ? "x-icon4.png" : "hamburger-icon.png"}`}
         className={`md:hidden cursor-pointer w-10 h-10 ml-10 ${
           isOpen ? "w-12 h-12" : "w-10"
         }`}

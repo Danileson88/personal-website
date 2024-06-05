@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
         </div>
       </div>
       <img
-        src={`src/assets/${isOpen ? "x-icon4.png" : "hamburger-icon.png"}`}
+        src={`./public/assets/${isOpen ? "x-icon4.png" : "hamburger-icon.png"}`}
         className={`md:hidden cursor-pointer w-10 h-10 ml-10 ${
           isOpen ? "w-12 h-12" : "w-10"
         }`}

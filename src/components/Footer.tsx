@@ -2,30 +2,42 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" mt-32 hidden md:flex justify-center lg:block">
+    <footer className=" mt-[150px] md:flex justify-center lg:block">
       <ul
-        className=" flex justify-between items-center h-32 border-t-4 border-gray-400 border-solid absolute md:static bottom-[-500px] md:w-auto
-     w-11/12 md:mr-20 md:ml-20"
+        className=" flex flex-col md:flex-row justify-between items-start gap-8 md:gap-0 
+        md:items-center h-32 border-t-4 border-gray-400 border-solid absolute md:static
+         bottom-[-500px] md:w-auto
+        w-full md:mr-20 md:ml-20"
       >
-        <li>
+        <li className=" ml-10 md:ml-0 mt-5 md:mt-0">
           <p className=" font-bold text-xl">Phone</p>
           <a href="tel:8063191187">(806)-319-1187</a>
         </li>
-        <li>
+        <li className=" ml-10 md:ml-0 mt-5 md:mt-0">
           <p className=" font-bold text-xl">Email</p>
           <a href="mailto:DanielOrtega8788@outlook.com">
             DanielOrtega8788@outlook.com
           </a>
           <li />
         </li>
-        <li>
+        <li className=" ml-10 md:ml-0 mt-5 md:mt-0">
           <p className=" font-bold text-xl">Follow Me</p>
-          <a className="flex">
-            <img src="assets/facebook-icon.png" />
-            <img src="assets/indeed-icon.png" />
+          <a className="flex gap-5">
+            <img
+              className="w-[40px] hover:cursor-pointer"
+              src="assets/facebook-icon2.png"
+              alt="facebook icon"
+            />
+            <img
+              className="w-[40px] hover:cursor-pointer"
+              src="assets/indeed-icon2.png"
+              alt="indeed icon"
+            />
           </a>
         </li>
-        <li>&copy; 2024 By Daniel Ortega.</li>
+        <li className=" ml-10 md:ml-0 mt-5 md:mt-0 pb-10 md:pb-0">
+          &copy; 2024 By Daniel Ortega.
+        </li>
       </ul>
     </footer>
   );

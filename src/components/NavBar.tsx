@@ -27,19 +27,19 @@ const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
         text-3xl md:text-base
         ${isOpen ? "block fade-in-up" : "hidden"} md:block`}
       >
-        <li className="mr-4 md:mt-0 mt-20">
+        <li className="mr-4 md:mt-0 mt-20 hover:cursor-pointer">
           Login
           <span className="ml-2 md:border-l-2 border-black"></span>
         </li>
-        <li>
+        <li className=" hover:cursor-pointer">
           Contact
           <span className="ml-2 md:border-l-2 border-black"></span>
         </li>
-        <li className="ml-2 mr-2">
+        <li className="ml-2 mr-2 hover:cursor-pointer">
           Resume
           <span className="ml-2 md:border-l-2 border-black"></span>
         </li>
-        <li>
+        <li className=" hover:cursor-pointer">
           Projects
           <span className="ml-2 md:-l-2 border-black"></span>
         </li>

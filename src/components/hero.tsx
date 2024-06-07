@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HeroProps } from "../types";
 import "../styles/animations.css";
 
 const Hero: React.FC<HeroProps> = ({ isOpen }) => {
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div
       className={` ${
@@ -25,7 +38,11 @@ const Hero: React.FC<HeroProps> = ({ isOpen }) => {
             necessitatibus nostrum incidunt nisi corporis. Quod accusamus quidem
             numquam dolores, reprehenderit quisquam?
           </h3>
-          <div className="flex mt-20 gap-2 md:gap-5 justify-center">
+          <div
+            className={`${
+              scroll ? "block absolute mt-10" : "md:hidden"
+            } flex gap-2 md:gap-5 justify-center mt-14`}
+          >
             <span
               className=" fade-in-up1 flex justify-center items-center border-solid bg-gray-500 
             rounded-full w-[125px] h-[125px] md:w-36 md:h-36 text-center font-bold text-2xl"

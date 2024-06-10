@@ -3,7 +3,10 @@ import { HeaderProps } from "../types";
 
 const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
   return (
-    <nav className="pt-8 flex md:ml-10 md:mr-10 md:justify-between bg-gray-100 top-0 z-10">
+    <nav
+      className="pt-8 flex md:ml-10 md:mr-10 md:justify-between
+    w-fit md:w-auto bg-gray-200 top-0 z-10"
+    >
       <div className="flex items-center ml-5">
         <span className="bg-gray-600 rounded-full md:w-10 w-14 md:h-10 h-14 mr-3"></span>
         <div className="flex items-baseline">
@@ -27,19 +30,19 @@ const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
         text-3xl md:text-base
         ${isOpen ? "block fade-in-up" : "hidden"} md:block`}
       >
-        <li className="mr-4 md:mt-0 mt-20 hover:cursor-pointer">
+        <li className="md:hover:text-orange-400 mr-4 md:mt-0 mt-20 hover:cursor-pointer">
           Login
           <span className="ml-2 md:border-l-2 border-black"></span>
         </li>
-        <li className=" hover:cursor-pointer">
+        <li className="md:hover:text-orange-400 hover:cursor-pointer">
           Contact
           <span className="ml-2 md:border-l-2 border-black"></span>
         </li>
-        <li className="ml-2 mr-2 hover:cursor-pointer">
+        <li className="md:hover:text-orange-400 ml-2 mr-2 hover:cursor-pointer">
           Resume
           <span className="ml-2 md:border-l-2 border-black"></span>
         </li>
-        <li className=" hover:cursor-pointer">
+        <li className="md:hover:text-orange-400 hover:cursor-pointer">
           Projects
           <span className="ml-2 md:-l-2 border-black"></span>
         </li>

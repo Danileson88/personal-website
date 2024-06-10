@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" mt-[150px] md:flex justify-center lg:block">
+    <footer className=" mt-[15rem] md:flex justify-center lg:block">
       <ul
         className=" flex flex-col md:flex-row justify-between items-start gap-8 md:gap-0 
-        md:items-center h-32 border-t-4 border-gray-400 border-solid absolute md:static
-         bottom-[-500px] md:w-auto
+        md:items-center h-32 border-t-[.1rem] border-gray-400 border-solid absolute md:static
+         bottom-[-36rem] md:w-auto
         w-full md:mr-20 md:ml-20"
       >
         <li className=" ml-10 md:ml-0 mt-5 md:mt-0">

@@ -3,7 +3,8 @@ import Header from "./components/NavBar";
 import Hero from "./components/hero";
 import Footer from "./components/Footer";
 import { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Contact from "./components/pages/Contact";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,13 +13,20 @@ function App() {
   };
 
   return (
-    <Router>
-      <div>
-        <Header openMenu={openMenu} isOpen={isOpen} />
-        <Hero openMenu={openMenu} isOpen={isOpen} />
-        <Footer />
-      </div>
-    </Router>
+    <div>
+      <nav>{<Header isOpen={isOpen} openMenu={openMenu} />}</nav>
+      <Routes>
+        <Route
+          path="/"
+          element={<Hero isOpen={isOpen} openMenu={openMenu} />}
+        />
+        <Route
+          path="/Contact"
+          element={<Contact isOpen={isOpen} openMenu={openMenu} />}
+        />
+      </Routes>
+      <footer>{<Footer />}</footer>
+    </div>
   );
 }
 

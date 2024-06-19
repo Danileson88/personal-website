@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HeroProps } from "../types";
 import "../styles/animations.css";
+import { Link } from "react-router-dom";
 
 const Hero: React.FC<HeroProps> = ({ isOpen }) => {
   const [scroll, setScroll] = useState(false);
@@ -25,9 +26,9 @@ const Hero: React.FC<HeroProps> = ({ isOpen }) => {
     >
       <div className=" flex items-center justify-center gap-5">
         <img
-          src="assets/profile-pic.JPG"
+          src="/assets/profile-pic.JPG"
           className="fadeinup w-[22rem] h-[22rem] md:w-[500px] md:h-[500px] border-solid rounded-full object-cover mt-32
-          absolute md:static top-[24rem]"
+          absolute md:static top-[27rem]"
         />
         <div className="info-text mr-5 ml-5 md:mr-0 md:ml-5 md:w-[500px]">
           <h1 className=" text-8xl font-bold">Hello</h1>
@@ -57,13 +58,15 @@ const Hero: React.FC<HeroProps> = ({ isOpen }) => {
             >
               Projects
             </span>
-            <span
-              className="fade-in-up3 flex justify-center items-center border-solid
+            <Link to="/Contact">
+              <span
+                className="fade-in-up3 flex justify-center items-center border-solid
               md:hover:bg-white transition-colors duration-300 border-black border-2 bg-rose-500 
             rounded-full w-[125px] h-[125px] md:w-36 md:h-36 text-center font-bold text-2xl"
-            >
-              Contact
-            </span>
+              >
+                Contact
+              </span>
+            </Link>
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" mt-[15rem] md:flex justify-center lg:block">
+    <footer className=" md:mt-[15rem] md:flex justify-center lg:block">
       <ul
         className=" flex flex-col md:flex-row justify-between items-start gap-8 md:gap-0 
         md:items-center h-32 border-t-[.1rem] border-gray-400 border-solid absolute md:static
@@ -25,12 +25,12 @@ const Footer: React.FC = () => {
           <a className="flex gap-5">
             <img
               className="w-[40px] hover:cursor-pointer"
-              src="assets/facebook-icon2.png"
+              src="/assets/facebook-icon2.png"
               alt="facebook icon"
             />
             <img
               className="w-[40px] hover:cursor-pointer"
-              src="assets/indeed-icon2.png"
+              src="/assets/indeed-icon2.png"
               alt="indeed icon"
             />
           </a>

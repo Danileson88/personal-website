@@ -25,12 +25,12 @@ const Footer = () => {
           <a className="flex gap-5">
             <img
               className="w-[40px] hover:cursor-pointer"
-              src="/assets/facebook-icon2.png"
+              src="public/assets/facebook-icon2.png"
               alt="facebook icon"
             />
             <img
               className="w-[40px] hover:cursor-pointer"
-              src="/assets/indeed-icon2.png"
+              src="public/assets/indeed-icon2.png"
               alt="indeed icon"
             />
           </a>

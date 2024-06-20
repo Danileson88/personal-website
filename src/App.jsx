@@ -17,7 +17,7 @@ function App() {
       <nav>{<Header isOpen={isOpen} openMenu={openMenu} />}</nav>
       <Routes>
         <Route
-          path="/"
+          path="/personal-website/"
           element={<Hero isOpen={isOpen} openMenu={openMenu} />}
         />
         <Route

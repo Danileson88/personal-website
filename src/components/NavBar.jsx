@@ -25,7 +25,7 @@ const Header = ({ openMenu, isOpen }) => {
         </div>
       </div>
       <img
-        src={`${isOpen ? "/assets/x-icon4.png" : "/assets/hamburger-icon.png"}`}
+        src={`${isOpen ? "assets/x-icon4.png" : "assets/hamburger-icon.png"}`}
         className={`md:hidden cursor-pointer w-10 h-10 ml-10 ${
           isOpen ? "w-12 h-12" : "w-10"
         }`}

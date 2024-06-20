@@ -3,7 +3,7 @@ import Header from "../NavBar";
 import Hero from "../hero";
 import { HeaderProps } from "../../types";
 
-const Home: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
+const Home = ({ openMenu, isOpen }) => {
   return (
     <div>
       <Header openMenu={openMenu} isOpen={isOpen} />

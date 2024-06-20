@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer: React.FC = () => {
+const Footer = () => {
   return (
     <footer className=" md:mt-[15rem] md:flex justify-center lg:block">
       <ul

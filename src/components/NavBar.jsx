@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/animations.css";
-import { HeaderProps } from "../types";
 
-const Header: React.FC<HeaderProps> = ({ openMenu, isOpen }) => {
+const Header = ({ openMenu, isOpen }) => {
   const closeMenu = () => {
     if (isOpen) {
       openMenu();

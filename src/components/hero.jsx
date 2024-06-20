@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { HeroProps } from "../types";
 import "../styles/animations.css";
 import { Link } from "react-router-dom";
 
-const Hero: React.FC<HeroProps> = ({ isOpen }) => {
+const Hero = ({ isOpen }) => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     const handleScroll = () => {

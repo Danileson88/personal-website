@@ -25,7 +25,7 @@ const Hero = ({ isOpen }) => {
     >
       <div className=" flex items-center justify-center gap-5">
         <img
-          src="public/assets/profile-pic.JPG"
+          src="./public/assets/profile-pic.JPG"
           className="fadeinup w-[22rem] h-[22rem] md:w-[500px] md:h-[500px] border-solid rounded-full object-cover mt-32
           absolute md:static top-[27rem]"
         />

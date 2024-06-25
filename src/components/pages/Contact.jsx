@@ -24,12 +24,12 @@ const Contact = ({ isOpen }) => {
     emailjs.sendForm("Ayden", "Daniel", form.current, "rEKqJFUM4yK7M12BJ").then(
       (result) => {
         console.log("Email sent successfully:", result.text);
-        alert("Form Submitted!"); // Optionally notify user
-        form.current.reset(); // Optionally reset the form after successful submission
+        alert("Form Submitted!");
+        form.current.reset();
       },
       (error) => {
         console.error("Email sending failed:", error.text);
-        alert("Failed to submit form. Please try again later."); // Notify user of failure
+        alert("Failed to submit form. Please try again later.");
       }
     );
   };
@@ -39,13 +39,15 @@ const Contact = ({ isOpen }) => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex ml-auto mr-auto justify-center border-[.2rem] p-12 w-fit mt-28 bg-gray-300 rounded-xl"
+        className="flex ml-auto mr-auto justify-center border-solid border-[2px] border-black p-12 md:w-fit w-[24rem]
+         mt-28 bg-gray-600 rounded-xl"
       >
         <div className="flex-col flex gap-9">
           <h1 className="flex justify-center text-6xl font-bebas text-yellow-600 font-bold">
             Contact Me
           </h1>
           <input
+            autoFocus
             type="text"
             required
             name="firstName"

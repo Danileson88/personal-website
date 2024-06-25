@@ -26,17 +26,23 @@ const Hero = ({ isOpen }) => {
       <div className=" flex items-center justify-center gap-5">
         <img
           src="assets/profile-pic.JPG"
-          className="fadeinup w-[22rem] h-[22rem] md:w-[500px] md:h-[500px] border-solid rounded-full object-cover mt-32
+          className="fadeinup w-[22rem] h-[22rem] md:w-[500px] md:h-[500px] border-solid rounded-full object-cover mt-[16rem]
           absolute md:static top-[27rem]"
         />
         <div className="info-text mr-5 ml-5 md:mr-0 md:ml-5 md:w-[500px]">
           <h1 className=" text-8xl font-bold">Hello</h1>
           <h2 className=" font-bold text-2xl mt-10 mb-2">A Bit About Me</h2>
-          <h3 className=" font-medium">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
-            sunt ab! Laborum doloremque animi impedit esse rerum exercitationem
-            necessitatibus nostrum incidunt nisi corporis. Quod accusamus quidem
-            numquam dolores, reprehenderit quisquam?
+          <h3 className=" font-medium font-serif">
+            As a passionate front-end developer, I specialize in creating
+            dynamic and user-friendly web applications using React. With a solid
+            foundation in HTML, CSS, and JavaScript, I am dedicated to
+            transforming creative concepts into interactive digital experiences.
+            My expertise in React allows me to build efficient and scalable
+            applications, ensuring seamless performance and an engaging user
+            interface. Whether working on a single-page application or a complex
+            web project, I am committed to delivering high-quality code and
+            innovative solutions that meet the evolving needs of users and
+            clients alike.
           </h3>
           <div
             className={`${

@@ -6,7 +6,7 @@ const Footer = () => {
       <ul
         className=" flex flex-col md:flex-row justify-between items-start gap-8 md:gap-0 
         md:items-center h-32 border-t-[.1rem] border-gray-400 border-solid absolute md:static
-         bottom-[-36rem] md:w-auto
+         bottom-[-39rem] md:w-auto
         w-full md:mr-20 md:ml-20"
       >
         <li className=" ml-10 md:ml-0 mt-5 md:mt-0">

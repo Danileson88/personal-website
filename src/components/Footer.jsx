@@ -1,8 +1,12 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ isOpen }) => {
   return (
-    <footer className=" md:mt-[15rem] md:flex justify-center lg:block">
+    <footer
+      className={`${
+        isOpen ? "hidden" : "block"
+      } md:mt-[15rem] md:flex justify-center lg:block`}
+    >
       <ul
         className=" flex flex-col md:flex-row justify-between items-start gap-8 md:gap-0 
         md:items-center h-32 border-t-[.1rem] border-gray-400 border-solid absolute md:static
@@ -18,7 +22,6 @@ const Footer = () => {
           <a href="mailto:DanielOrtega8788@outlook.com">
             DanielOrtega8788@outlook.com
           </a>
-          <li />
         </li>
         <li className=" ml-10 md:ml-0 mt-5 md:mt-0">
           <p className=" font-bold text-xl">Follow Me</p>

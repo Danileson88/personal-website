@@ -20,18 +20,20 @@ const Hero = ({ isOpen }) => {
     <div
       className={` ${
         isOpen ? "opacity-0" : " opacity-100"
-      } fade-in-up flex md:flex justify-center md:h-screen md:mt-[100px] absolute md:static
+      } fade-in-up flex md:flex justify-center md:h-screen md:mt-[1rem] absolute md:static
       mt-20`}
     >
       <div className=" flex items-center justify-center gap-5">
         <img
           src="assets/profile-pic.JPG"
-          className="fadeinup w-[22rem] h-[22rem] md:w-[500px] md:h-[500px] border-solid rounded-full object-cover mt-[16rem]
+          className="w-[22rem] h-[22rem] md:w-[500px] md:h-[500px] border-solid rounded-full object-cover mt-[16rem]
           absolute md:static top-[27rem]"
         />
         <div className="info-text mr-5 ml-5 md:mr-0 md:ml-5 md:w-[500px]">
           <h1 className=" text-8xl font-bold">Hello</h1>
-          <h2 className=" font-bold text-2xl mt-10 mb-2">A Bit About Me</h2>
+          <h2 className=" font-bold text-2xl mt-5 md:mt-10 mb-2">
+            A Bit About Me
+          </h2>
           <h3 className=" font-medium font-serif">
             As a passionate front-end developer, I specialize in creating
             dynamic and user-friendly web applications using React. With a solid
@@ -51,22 +53,22 @@ const Hero = ({ isOpen }) => {
           >
             <span
               className=" fade-in-up1 flex justify-center items-center border-solid
-              md:hover:bg-white transition-colors duration-300 border-black border-2 bg-gray-500 
+              md:hover:bg-white transition-colors duration-300 border-black border-2 bg-yellow-400 
             rounded-full w-[125px] h-[125px] md:w-36 md:h-36 text-center font-bold text-2xl"
             >
-              Resume
+              <Link to="/Resume">Resume</Link>
             </span>
             <span
               className=" fade-in-up2 flex justify-center items-center border-solid
-              md:hover:bg-white transition-colors duration-300 border-black border-2 bg-yellow-500
+              md:hover:bg-white transition-colors duration-300 border-black border-2 bg-red-500
             rounded-full w-[125px] h-[125px] md:w-36 md:h-36 text-center font-bold text-2xl"
             >
-              Projects
+              <Link to="/Projects">Projects</Link>
             </span>
             <Link to="/Contact">
               <span
                 className="fade-in-up3 flex justify-center items-center border-solid
-              md:hover:bg-white transition-colors duration-300 border-black border-2 bg-rose-500 
+              md:hover:bg-white transition-colors duration-300 border-black border-2 bg-sky-300 
             rounded-full w-[125px] h-[125px] md:w-36 md:h-36 text-center font-bold text-2xl"
               >
                 Contact

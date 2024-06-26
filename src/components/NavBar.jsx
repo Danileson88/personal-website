@@ -38,7 +38,7 @@ const Header = ({ openMenu, isOpen }) => {
         className={`md:mr-6 md:flex absolute md:relative top-32 md:top-0
         md:w-auto w-[28rem] pt-[11rem] md:pt-10 md:h-auto bg-gray-600 text-white md:text-black
          font-extrabold md:font-normal md:bg-inherit
-        h-screen flex items-center flex-col md:flex-row md:gap-2 gap-10
+         h-full flex items-center flex-col md:flex-row md:gap-2 gap-10
         text-5xl md:text-base
         ${isOpen ? "block fade-in-up md:animate-none" : "hidden"} md:block`}
         style={{ zIndex: 50 }}

@@ -35,7 +35,7 @@ function App() {
           element={<Resume isOpen={isOpen} openMenu={openMenu} />}
         />
       </Routes>
-      <footer>{<Footer />}</footer>
+      <footer>{<Footer isOpen={isOpen} />}</footer>
     </div>
   );
 }

@@ -20,14 +20,14 @@ const Hero = ({ isOpen }) => {
     <div
       className={` ${
         isOpen ? "opacity-0" : " opacity-100"
-      } fade-in-up flex md:flex justify-center md:h-screen md:mt-[1rem] absolute md:static
-      mt-20`}
+      } fade-in-up flex md:flex justify-center md:h-screen md:mt-[1rem] md:static
+      mt-20 mb-[36rem] md:mb-0`}
     >
       <div className=" flex items-center justify-center gap-5">
         <img
           src="assets/profile-pic.JPG"
           className="w-[22rem] h-[22rem] md:w-[500px] md:h-[500px] border-solid rounded-full object-cover mt-[16rem]
-          absolute md:static top-[27rem]"
+          absolute md:static top-[38rem] md:top-[27rem]"
         />
         <div className="info-text mr-5 ml-5 md:mr-0 md:ml-5 md:w-[500px]">
           <h1 className=" text-8xl font-bold">Hello</h1>

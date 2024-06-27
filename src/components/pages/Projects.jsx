@@ -7,7 +7,7 @@ const Projects = ({ isOpen, openMenu }) => {
     >
       <a href="https://github.com/Danileson88/CapstoneProject">
         <img
-          src="public/assets/littleLemon-screenShot.png"
+          src="assets/littleLemon-screenShot.png"
           alt="project image"
           className=" max-w-[25rem] md:max-w-[50rem] mt-10"
         />

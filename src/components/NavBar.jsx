@@ -44,7 +44,9 @@ const Header = ({ openMenu, isOpen }) => {
         style={{ zIndex: 50 }}
       >
         <li className="md:hover:text-orange-400 mr-4 md:mt-0 hover:cursor-pointer">
-          Login
+          <Link to="/Login" onClick={closeMenu}>
+            Login
+          </Link>
           <span className="ml-2 md:border-l-2 border-black"></span>
         </li>
         <li className="md:hover:text-orange-400 hover:cursor-pointer">

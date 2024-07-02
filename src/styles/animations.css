@@ -40,7 +40,7 @@
 }
 
 .fade-in-up2 {
-  animation: fadeInUp2 2s ease forwards; /* Increased duration to 1 second */
+  animation: fadeInUp2 2s ease forwards; /* Increased duration to 2 second */
 }
 
 @keyframes fadeInUp3 {
@@ -55,7 +55,7 @@
 }
 
 .fade-in-up3 {
-  animation: fadeInUp3 2.5s ease forwards; /* Increased duration to 1 second */
+  animation: fadeInUp3 2.5s ease forwards; /* Increased duration to 2.5 second */
 }
 
 @keyframes fadeIn {
@@ -67,5 +67,33 @@
   }
 }
 .fade-In {
-  animation: fadeIn 1.5s ease;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeSideway {
+  0% {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.fade-Sideway {
+  animation: fadeSideway 1.5s ease-in-out;
+}
+
+@keyframes fadeSideway2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.fade-Sideway2 {
+  animation: fadeSideway2 1.5s ease-in-out;
 }

@@ -48,7 +48,7 @@ const Hero = ({ isOpen }) => {
           </h3>
           <div
             className={`${
-              scroll ? "block absolute mt-10" : "md:hidden"
+              scroll ? "block absolute mt-10" : "hidden"
             } flex gap-2 md:gap-5 md:justify-center mt-14`}
           >
             <span

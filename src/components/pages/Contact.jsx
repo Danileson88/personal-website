@@ -39,7 +39,7 @@ const Contact = ({ isOpen }) => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex ml-auto mr-auto justify-center border-solid border-[2px] border-black p-12 md:w-fit w-[24rem]
+        className="fade-In flex ml-auto mr-auto justify-center border-solid border-[2px] border-black p-12 md:w-fit w-[24rem]
          mt-28 bg-gray-600 rounded-xl"
       >
         <div className="flex-col flex gap-9">

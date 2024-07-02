@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
 import Resume from "./components/pages/Resume";
+import Login from "./components/pages/Login";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,6 +34,10 @@ function App() {
         <Route
           path="/Resume"
           element={<Resume isOpen={isOpen} openMenu={openMenu} />}
+        />
+        <Route
+          path="/Login"
+          element={<Login isOpen={isOpen} openMenu={openMenu} />}
         />
       </Routes>
       <footer>{<Footer isOpen={isOpen} />}</footer>

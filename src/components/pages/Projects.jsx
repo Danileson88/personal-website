@@ -3,9 +3,12 @@ const Projects = ({ isOpen, openMenu }) => {
     <div
       className={`${
         isOpen ? "opacity-0" : "opacity-100"
-      } fade-In flex justify-center flex-wrap`}
+      } flex justify-center flex-wrap`}
     >
-      <a href="https://github.com/Danileson88/CapstoneProject">
+      <a
+        href="https://github.com/Danileson88/CapstoneProject"
+        className="fade-In"
+      >
         <img
           src="assets/littleLemon-screenShot.png"
           alt="project image"

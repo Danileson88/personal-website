@@ -6,7 +6,7 @@ const Hero = ({ isOpen }) => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 1) {
         setScroll(true);
       } else {
         setScroll(false);
@@ -20,21 +20,25 @@ const Hero = ({ isOpen }) => {
     <div
       className={` ${
         isOpen ? "opacity-0" : " opacity-100"
-      } fade-in-up flex md:flex justify-center md:h-screen md:mt-[1rem] md:static
-      mt-20 mb-[36rem] md:mb-0`}
+      } fade-in-up flex md:flex justify-center md:pt-[30px] md:h-screen
+      mt-20 mb-[5rem] xs:w-full`}
     >
-      <div className=" flex items-center justify-center gap-5">
+      <div className=" flex items-center justify-center xs:flex-col-reverse md:flex-row gap-5">
         <img
           src="assets/profile-pic.JPG"
-          className="w-[22rem] h-[22rem] md:w-[500px] md:h-[500px] border-solid rounded-full object-cover mt-[16rem]
-          absolute md:static top-[38rem] md:top-[27rem]"
+          className={`${
+            scroll
+              ? "block fade-In md:animate-none md:block"
+              : "hidden md:block"
+          } w-[22rem] h-[22rem] md:w-[34rem] md:h-[34rem] border-solid rounded-full object-cover
+          mt-[2rem]`}
         />
-        <div className="info-text mr-5 ml-5 md:mr-0 md:ml-5 md:w-[500px]">
+        <div className="info-text mr-3 ml-3 md:mr-0 md:ml-5 md:w-[500px]">
           <h1 className=" text-8xl font-bold">Hello</h1>
-          <h2 className=" font-bold text-2xl mt-5 md:mt-10 mb-2">
+          <h2 className=" font-bold text-2xl mt-5 md:mt-0 mb-2">
             A Bit About Me
           </h2>
-          <h3 className=" font-medium font-serif">
+          <h3 className=" font-medium font-serif mb-10 ">
             As a passionate front-end developer, I specialize in creating
             dynamic and user-friendly web applications using React. With a solid
             foundation in HTML, CSS, and JavaScript, I am dedicated to
@@ -48,28 +52,34 @@ const Hero = ({ isOpen }) => {
           </h3>
           <div
             className={`${
-              scroll ? "block absolute mt-10" : "hidden"
-            } flex gap-2 md:gap-5 md:justify-center mt-14`}
+              scroll ? "opacity-100" : "opacity-0"
+            } flex gap-2 md:gap-5 justify-center`}
           >
             <span
-              className=" fade-in-up1 flex justify-center items-center border-solid
+              className={`${
+                scroll ? "fade-in-up1" : "animate-none"
+              } flex justify-center items-center border-solid
               md:hover:bg-white transition-colors duration-300 border-black border-2 bg-yellow-400 
-            rounded-full w-[125px] h-[125px] md:w-36 md:h-36 text-center font-bold text-2xl"
+            rounded-full w-[7rem] h-[7rem] md:w-36 md:h-36 text-center font-bold text-2xl`}
             >
               <Link to="/Resume">Resume</Link>
             </span>
             <span
-              className=" fade-in-up2 flex justify-center items-center border-solid
+              className={`${
+                scroll ? "fade-in-up2" : "animate-none"
+              } flex justify-center items-center border-solid
               md:hover:bg-white transition-colors duration-300 border-black border-2 bg-red-500
-            rounded-full w-[125px] h-[125px] md:w-36 md:h-36 text-center font-bold text-2xl"
+            rounded-full w-[7rem] h-[7rem] md:w-36 md:h-36 text-center font-bold text-2xl`}
             >
               <Link to="/Projects">Projects</Link>
             </span>
             <Link to="/Contact">
               <span
-                className="fade-in-up3 flex justify-center items-center border-solid
+                className={`${
+                  scroll ? "fade-in-up3" : "animate-none"
+                } flex justify-center items-center border-solid
               md:hover:bg-white transition-colors duration-300 border-black border-2 bg-sky-300 
-            rounded-full w-[125px] h-[125px] md:w-36 md:h-36 text-center font-bold text-2xl"
+            rounded-full w-[7rem] h-[7rem] md:w-36 md:h-36 text-center font-bold text-2xl`}
               >
                 Contact
               </span>

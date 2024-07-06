@@ -40,7 +40,7 @@ const Contact = ({ isOpen }) => {
         ref={form}
         onSubmit={sendEmail}
         className="fade-In flex ml-auto mr-auto justify-center border-solid border-[2px] border-black p-12 md:w-fit w-[24rem]
-         mt-28 bg-gray-600 rounded-xl"
+         mt-28 bg-gray-600 rounded-xl shadow-2xl shadow-gray-400"
       >
         <div className="flex-col flex gap-9">
           <h1 className="flex justify-center text-6xl font-bebas text-yellow-600 font-bold">

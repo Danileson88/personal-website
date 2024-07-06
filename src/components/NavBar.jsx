@@ -10,15 +10,15 @@ const Header = ({ openMenu, isOpen }) => {
 
   return (
     <nav
-      className="pt-8 flex md:ml-10 md:mr-10 md:justify-between
-    w-auto md:w-auto bg-gray-200 top-0 z-10 md:border-b-[.1rem] border-gray-400 md:h-[8rem]"
+      className=" pt-[3rem] md:pt-8 flex md:ml-10 md:mr-10 md:justify-between
+      md:w-auto bg-gray-200 md:border-b-[.1rem] border-gray-400 md:pb-2"
     >
       <div className="flex items-center ml-5">
         <span className="bg-gray-600 rounded-full md:w-10 w-14 md:h-10 h-14 mr-3"></span>
         <div className="flex items-baseline">
           <Link to="/">
             <h1
-              className="font-bebas font-extrabold md:text-4xl text-3xl mr-3"
+              className="font-bebas text-nowrap font-extrabold md:text-4xl text-3xl mr-3"
               onClick={closeMenu}
             >
               Daniel Ortega

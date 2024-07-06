@@ -5,12 +5,12 @@ const Footer = ({ isOpen }) => {
     <footer
       className={`${
         isOpen ? "hidden" : "block"
-      } md:mt-[10rem] md:flex justify-center lg:block`}
+      } w-auto md:mt-[10rem] md:flex justify-center lg:block`}
     >
       <ul
         className=" flex flex-col md:flex-row justify-between items-start gap-8 md:gap-0 
         md:items-center h-32 border-t-[.1rem] border-gray-400 border-solid md:static
-         bottom-[-39rem absolute md:w-auto
+         md:w-auto
         w-full md:mr-20 md:ml-20 mt-10 md:mt-0"
       >
         <li className=" ml-10 md:ml-0 mt-5 md:mt-0">

@@ -7,6 +7,10 @@ export default {
         sans: ["Roboto", "sans-serif"],
         bebas: ["Bebas Neue"],
       },
+      screens: {
+        xs: "200px",
+        xxs: "100px",
+      },
     },
   },
   plugins: [],

@@ -8,8 +8,8 @@ export default {
         bebas: ["Bebas Neue"],
       },
       screens: {
-        xs: "200px",
-        xxs: "100px",
+        xs: "376px",
+        xxs: "360px",
       },
     },
   },

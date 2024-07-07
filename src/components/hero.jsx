@@ -20,10 +20,10 @@ const Hero = ({ isOpen }) => {
     <div
       className={` ${
         isOpen ? "opacity-0" : " opacity-100"
-      } fade-in-up flex md:flex justify-center md:pt-[30px] md:h-screen
-      mt-20 mb-[5rem] xs:w-full`}
+      } fade-in-up flex justify-center md:pt-[30px] md:h-screen
+      mt-20 mb-[5rem]`}
     >
-      <div className=" flex items-center justify-center xs:flex-col-reverse md:flex-row gap-5">
+      <div className=" flex items-center justify-center xxs:flex-col-reverse md:flex-row gap-5">
         <img
           src="assets/profile-pic.JPG"
           className={`${

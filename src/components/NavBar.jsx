@@ -13,8 +13,11 @@ const Header = ({ openMenu, isOpen }) => {
       className=" pt-[3rem] md:pt-8 flex md:ml-10 md:mr-10 md:justify-between
       md:w-auto bg-gray-200 md:border-b-[.1rem] border-gray-400 md:pb-2"
     >
-      <div className="flex items-center ml-5">
-        <span className="bg-gray-600 rounded-full md:w-10 w-14 md:h-10 h-14 mr-3"></span>
+      <div className="flex items-center xxs:ml-2 xs:ml-3">
+        <span
+          className="bg-gray-600 rounded-full md:w-10 w-14 md:h-10 h-14
+         xxs:mr-1 xs:mr-3"
+        ></span>
         <div className="flex items-baseline">
           <Link to="/">
             <h1
@@ -29,16 +32,16 @@ const Header = ({ openMenu, isOpen }) => {
       </div>
       <img
         src={`${isOpen ? "assets/x-icon4.png" : "assets/hamburger-icon.png"}`}
-        className={`md:hidden cursor-pointer w-10 h-10 ml-10 ${
+        className={`md:hidden cursor-pointer w-10 h-10 xxs:ml-5 xs:ml-10 ${
           isOpen ? "w-12 h-12" : "w-10"
         }`}
         onClick={openMenu}
       />
       <ul
         className={`md:mr-6 md:flex absolute md:relative top-32 md:top-0
-        md:w-auto w-[28rem] pt-[11rem] md:pt-10 md:h-auto bg-gray-600 text-white md:text-black
+        md:w-auto xxs:w-full pt-[11rem] md:pt-10 md:h-auto bg-gray-600 text-white md:text-black
          font-extrabold md:font-normal md:bg-inherit
-         h-full flex items-center flex-col md:flex-row md:gap-2 gap-10
+         xxs:h-full flex items-center flex-col md:flex-row md:gap-2 gap-10
         text-5xl md:text-base
         ${isOpen ? "block fade-in-up md:animate-none" : "hidden"} md:block`}
         style={{ zIndex: 50 }}

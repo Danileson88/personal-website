@@ -5,13 +5,13 @@ const Footer = ({ isOpen }) => {
     <footer
       className={`${
         isOpen ? "hidden" : "block"
-      } w-auto md:mt-[10rem] md:flex justify-center lg:block`}
+      } w-full max-w-full md:mt-[10rem] md:flex justify-center lg:block`}
     >
       <ul
         className=" flex flex-col md:flex-row justify-between items-start gap-8 md:gap-0 
         md:items-center h-32 border-t-[.1rem] border-gray-400 border-solid md:static
          md:w-auto
-        w-full md:mr-20 md:ml-20 mt-10 md:mt-0"
+        w-auto md:mr-20 md:ml-20 mt-10 md:mt-0"
       >
         <li className=" ml-10 md:ml-0 mt-5 md:mt-0">
           <p className=" font-bold text-xl">Phone</p>

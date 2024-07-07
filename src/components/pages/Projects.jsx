@@ -5,14 +5,11 @@ const Projects = ({ isOpen, openMenu }) => {
         isOpen ? "opacity-0" : "opacity-100"
       } flex justify-center flex-wrap`}
     >
-      <a
-        href="https://github.com/Danileson88/CapstoneProject"
-        className="fade-In"
-      >
+      <a href="https://github.com/Danileson88/CapstoneProject" className="">
         <img
           src="assets/littleLemon-screenShot.png"
           alt="project image"
-          className=" max-w-[25rem] md:max-w-[50rem] mt-10"
+          className="fade-In xxs:w-[20rem] md:max-w-[50rem] mt-10"
         />
       </a>
       <h1 className="mt-[5rem] font-serif text-2xl w-[25rem] md:w-[50rem] text-center">

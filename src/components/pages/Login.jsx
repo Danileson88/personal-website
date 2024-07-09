@@ -6,7 +6,7 @@ const Login = ({ isOpen, openMenu }) => {
     >
       <form
         className="flex gap-4 flex-col justify-evenly items-center border-2
-      bg-gray-500 border-gray-400 p-10 w-fit"
+      bg-stone-300 border-gray-400 p-10 w-fit"
       >
         <input
           className=" p-1 shadow-inner shadow-black rounded"
@@ -20,10 +20,10 @@ const Login = ({ isOpen, openMenu }) => {
           name="password"
           placeholder="Password"
         />
-        <button className=" shadow-inner shadow-gray-600 p-3 bg-red-300">
+        <button className=" shadow-inner shadow-gray-600 p-2 w-[6rem] rounded bg-red-300">
           Login
         </button>
-        <div className=" text-white">
+        <div className=" text-gray-500">
           <p className="">Sign Up</p>
           <p>Forgot Password?</p>
         </div>

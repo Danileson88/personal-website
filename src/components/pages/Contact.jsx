@@ -43,11 +43,11 @@ const Contact = ({ isOpen }) => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="fade-In flex justify-center border-solid border-[2px] border-black p-12 md:w-fit xxs:w-[20rem] xs:w-[24rem]
-         mt-28 bg-gray-600 rounded-xl shadow-2xl shadow-gray-400"
+        className="fade-In flex justify-center border-solid border-[.1rem] border-black p-12 md:w-fit xxs:w-[20rem] xs:w-[24rem]
+         mt-28 bg-stone-300 rounded-xl shadow-lg shadow-black"
       >
         <div className="flex-col flex gap-9 w-full">
-          <h1 className="flex justify-center xxs:text-5xl xs:text-6xl font-bebas text-yellow-600 font-bold">
+          <h1 className="flex justify-center xxs:text-5xl xs:text-6xl font-bebas text-gray-700  font-bold">
             Contact Me
           </h1>
           <input

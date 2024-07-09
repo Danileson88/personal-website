@@ -9,7 +9,8 @@ const Projects = ({ isOpen, openMenu }) => {
         <img
           src="assets/littleLemon-screenShot.png"
           alt="project image"
-          className="fade-In xxs:w-[20rem] md:max-w-[50rem] mt-10"
+          className="fade-In xxs:w-[20rem] md:object-top md:w-[50rem] mt-10
+          border-[.1rem] border-green-800"
         />
       </a>
       <h1 className="mt-[5rem] font-serif text-2xl w-[25rem] md:w-[50rem] text-center">

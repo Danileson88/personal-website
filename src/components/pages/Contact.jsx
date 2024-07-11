@@ -1,7 +1,9 @@
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
+import menuProvider from "../MenuContext";
 
-const Contact = ({ isOpen }) => {
+const Contact = () => {
+  const { isOpen } = useContext(menuProvider);
   const form = useRef();
   const [formData, setFormData] = useState({
     firstName: "",

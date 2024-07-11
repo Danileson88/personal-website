@@ -1,4 +1,4 @@
-const Resume = ({ isOpen, openMenu }) => {
+const Resume = () => {
   return (
     <div className="flex justify-center mt-[6rem]">
       <a

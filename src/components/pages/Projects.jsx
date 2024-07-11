@@ -1,16 +1,28 @@
-const Projects = ({ isOpen, openMenu }) => {
+import { useContext } from "react";
+import menuProvider from "../MenuContext";
+
+const Projects = () => {
+  const { isOpen } = useContext(menuProvider);
   return (
     <div
       className={`${
         isOpen ? "opacity-0" : "opacity-100"
-      } flex justify-center flex-wrap`}
+      } flex justify-center flex-wrap pt-[2rem]`}
     >
       <a href="https://github.com/Danileson88/CapstoneProject" className="">
         <img
-          src="assets/littleLemon-screenShot.png"
+          src="assets/littleLemon-screenShot.jpeg"
           alt="project image"
           className="fade-In xxs:w-[20rem] md:object-top md:w-[50rem] mt-10
-          border-[.1rem] border-green-800"
+          border-[.1rem] border-green-800 rounded"
+        />
+      </a>
+      <a href="https://github.com/Danileson88/CapstoneProject" className="">
+        <img
+          src="assets/littleLemon-bottom.jpeg"
+          alt="project image"
+          className="fade-In xxs:w-[20rem] md:object-top md:w-[50rem] mt-10
+          border-[.1rem] border-green-800 rounded"
         />
       </a>
       <h1 className="mt-[5rem] font-serif text-2xl w-[25rem] md:w-[50rem] text-center">

@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../styles/animations.css";
 import { Link } from "react-router-dom";
+import menuProvider from "./MenuContext";
 
-const Hero = ({ isOpen }) => {
+const Hero = () => {
+  const { isOpen } = useContext(menuProvider);
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     const handleScroll = () => {

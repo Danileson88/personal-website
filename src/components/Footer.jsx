@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import menuProvider from "./MenuContext";
 
-const Footer = ({ isOpen }) => {
+const Footer = () => {
+  const { isOpen } = useContext(menuProvider);
   return (
     <footer
       className={`${

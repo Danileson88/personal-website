@@ -8,6 +8,7 @@ import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
 import Resume from "./components/pages/Resume";
 import Login from "./components/pages/Login";
+import menuProvider from "./components/MenuContext";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,30 +18,17 @@ function App() {
 
   return (
     <div>
-      <nav>{<Header isOpen={isOpen} openMenu={openMenu} />}</nav>
-      <Routes>
-        <Route
-          path="/"
-          element={<Hero isOpen={isOpen} openMenu={openMenu} />}
-        />
-        <Route
-          path="/Contact"
-          element={<Contact isOpen={isOpen} openMenu={openMenu} />}
-        />
-        <Route
-          path="/Projects"
-          element={<Projects isOpen={isOpen} openMenu={openMenu} />}
-        />
-        <Route
-          path="/Resume"
-          element={<Resume isOpen={isOpen} openMenu={openMenu} />}
-        />
-        <Route
-          path="/Login"
-          element={<Login isOpen={isOpen} openMenu={openMenu} />}
-        />
-      </Routes>
-      <footer>{<Footer isOpen={isOpen} />}</footer>
+      <menuProvider.Provider value={{ isOpen, setIsOpen, openMenu }}>
+        <nav>{<Header />}</nav>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Resume" element={<Resume />} />
+          <Route path="/Login" element={<Login />} />
+        </Routes>
+        <footer>{<Footer />}</footer>
+      </menuProvider.Provider>
     </div>
   );
 }

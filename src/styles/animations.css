@@ -67,7 +67,7 @@
   }
 }
 .fade-In {
-  animation: fadeIn 1.6s ease;
+  animation: fadeIn 0.8s ease;
 }
 
 @keyframes fadeSideway {

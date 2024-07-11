@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
 import "../styles/animations.css";
+import { useContext } from "react";
+import menuProvider from "./MenuContext";
 
-const Header = ({ openMenu, isOpen }) => {
+const Header = () => {
+  const { isOpen, openMenu } = useContext(menuProvider);
   const closeMenu = () => {
     if (isOpen) {
       openMenu();
@@ -43,7 +46,7 @@ const Header = ({ openMenu, isOpen }) => {
          font-extrabold md:font-normal md:bg-inherit
          xxs:h-full flex items-center flex-col md:flex-row md:gap-2 gap-10
         text-5xl md:text-base
-        ${isOpen ? "block fade-in-up md:animate-none" : "hidden"} md:block`}
+        ${isOpen ? "block  fade-in-up md:animate-none" : "hidden"} md:block`}
         style={{ zIndex: 50 }}
       >
         <li className="md:hover:text-orange-400 mr-4 md:mt-0 hover:cursor-pointer">

@@ -1,4 +1,8 @@
-const Login = ({ isOpen, openMenu }) => {
+import { useContext } from "react";
+import menuProvider from "../MenuContext";
+
+const Login = () => {
+  const { isOpen } = useContext(menuProvider);
   return (
     <div
       className={`${isOpen ? "opacity-0" : "opacity-100"}

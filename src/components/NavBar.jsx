@@ -13,8 +13,8 @@ const Header = () => {
 
   return (
     <nav
-      className=" pt-[3rem] md:pt-8 flex md:ml-10 md:mr-10 md:justify-between
-      md:w-auto bg-gray-200 md:border-b-[.1rem] border-gray-400 md:pb-2"
+      className=" pt-[3rem] md:pt-8 flex lg:ml-10 lg:mr-10 md:justify-between
+      md:w-full lg:w-auto bg-gray-200 md:border-b-[.1rem] border-gray-400 md:pb-2"
     >
       <div className="flex items-center xxs:ml-2 xs:ml-3">
         <span

@@ -6,12 +6,24 @@ const Contact = () => {
   const { isOpen } = useContext(menuProvider);
   const form = useRef();
   const [formData, setFormData] = useState({
+    id: "",
     firstName: "",
     lastName: "",
     email: "",
     phone: "",
     message: "",
   });
+  const resetFormData = () => {
+    setFormData({
+      id: "",
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  };
+  const [submitting, setisSubmitting] = useState(false);
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
@@ -22,16 +34,20 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setisSubmitting(true);
 
     emailjs.sendForm("Ayden", "Daniel", form.current, "rEKqJFUM4yK7M12BJ").then(
       (result) => {
         console.log("Email sent successfully:", result.text);
         alert("Form Submitted!");
         form.current.reset();
+        resetFormData();
+        setisSubmitting(false);
       },
       (error) => {
         console.error("Email sending failed:", error.text);
         alert("Failed to submit form. Please try again later.");
+        setisSubmitting(false);
       }
     );
   };
@@ -93,7 +109,7 @@ const Contact = () => {
             type="submit"
             className="xxs:text-xl xs:text-3xl p-10 bg-red-300 rounded-xl shadow-inner shadow-black"
           >
-            Submit
+            {submitting ? "Submitting..." : "Submit"}
           </button>
         </div>
       </form>

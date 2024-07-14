@@ -22,25 +22,25 @@ const Hero = () => {
     <div
       className={` ${
         isOpen ? "opacity-0" : " opacity-100"
-      } fade-in-up flex justify-center md:pt-[30px] md:h-screen
-      mt-20 mb-[5rem]`}
+      } fade-in-up flex justify-center md:pt-[30px]  lg:h-screen
+      pt-20 lg:pt-[20rem] lg:pb-[10rem] mb-[5rem]`}
     >
-      <div className=" flex items-center justify-center xxs:flex-col-reverse md:flex-row gap-5">
+      <div className=" flex items-center justify-center xxs:flex-col-reverse md:flex-row lg:flex-row gap-5">
         <img
           src="assets/profile-pic.JPG"
           className={`${
             scroll
               ? "block fade-In md:animate-none md:block"
               : "hidden md:block"
-          } w-[22rem] h-[22rem] md:w-[34rem] md:h-[34rem] border-solid rounded-full object-cover
+          } w-[22rem] h-[22rem] md:w-[20rem] md:h-[20rem] lg:w-[34rem] lg:h-[34rem] border-solid rounded-full object-cover
           mt-[2rem]`}
         />
-        <div className="info-text mr-3 ml-3 md:mr-0 md:ml-5 md:w-[500px]">
+        <div className="info-text mr-3 ml-3 md:mr-0 md:ml-5 md:w-[30rem] lg:w-[500px]">
           <h1 className=" text-8xl font-bold">Hello</h1>
           <h2 className=" font-bold text-2xl mt-5 md:mt-0 mb-2">
             A Bit About Me
           </h2>
-          <h3 className=" font-medium font-serif mb-10 ">
+          <h3 className=" font-medium font-serif pb-10 ">
             As a passionate front-end developer, I specialize in creating
             dynamic and user-friendly web applications using React. With a solid
             foundation in HTML, CSS, and JavaScript, I am dedicated to

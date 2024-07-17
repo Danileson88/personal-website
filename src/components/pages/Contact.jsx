@@ -108,6 +108,7 @@ const Contact = () => {
           <button
             type="submit"
             className="xxs:text-xl xs:text-3xl p-10 bg-red-300 rounded-xl shadow-inner shadow-black"
+            disabled={submitting}
           >
             {submitting ? "Submitting..." : "Submit"}
           </button>
